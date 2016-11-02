@@ -1,4 +1,3 @@
-const React                 = require('react');
 const {
     CREATE_TODO, 
     EDIT_TODO,     
@@ -9,10 +8,9 @@ const {
 
 
 
-const addTodo = (task) => {
+export const addTodo = (task) => {
     return {
         type: CREATE_TODO,
-        isDone: false,
         task
     }
 };
